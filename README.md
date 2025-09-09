@@ -1,2 +1,2 @@
 # Projeto_Aula
-Repositório teste 
+Repositório teste seguindo o manual de boas práticas 
