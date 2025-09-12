@@ -3,54 +3,54 @@
 
  # Código-fonte
  
-#include <stdio.h>
-#include <string.h>
-#include <locale.h>
+    #include <stdio.h> <br>
+    #include <string.h> <br>
+    #include <locale.h> <br>
 
-#define MAX_PRODUTOS 100
-#define MAX_FUNCIONARIOS 50
+    #define MAX_PRODUTOS 100 <br>
+    #define MAX_FUNCIONARIOS 50 <br>
 
 // Estrutura para Produtos
 
-typedef struct {
-    int id;
-    char nome[50];
-    float preco;
-    int quantidade;
-} Produto;
+    typedef struct {
+    int id; <br>
+    char nome[50]; <br>
+    float preco; <br> 
+    int quantidade; <br>
+    } Produto;
 
 // Estrutura para Funcionários
 
-typedef struct {
-    int id;
-    char nome[50];
-    char cargo[50];
-} Funcionario;
+    typedef struct {
+    int id; <br>
+    char nome[50]; <br> 
+    char cargo[50]; <br>
+    } Funcionario;
 
 // Funções de Estoque
 
-void adicionarProduto(Produto estoque[], int *numProdutos);
-void listarProdutos(Produto estoque[], int numProdutos);
-void atualizarQuantidade(Produto estoque[], int numProdutos);
-void buscarProduto(Produto estoque[], int numProdutos);
+    void adicionarProduto(Produto estoque[], int *numProdutos); <br>
+    void listarProdutos(Produto estoque[], int numProdutos); <br> 
+    void atualizarQuantidade(Produto estoque[], int numProdutos); <br> 
+    void buscarProduto(Produto estoque[], int numProdutos); <br>
 
 // Funções de Caixa
 
-void realizarVenda(Produto estoque[], int numProdutos);
-void relatorioVendas();
+    void realizarVenda(Produto estoque[], int numProdutos); <br> 
+    void relatorioVendas(); <br>
 
 // Funções de Funcionários
 
-void cadastrarFuncionario(Funcionario funcionarios[], int *numFuncionarios);
-void listarFuncionarios(Funcionario funcionarios[], int numFuncionarios);
+    void cadastrarFuncionario(Funcionario funcionarios[], int *numFuncionarios); <br> 
+    void listarFuncionarios(Funcionario funcionarios[], int numFuncionarios); <br>
 
-int main() {
-    setlocale(LC_ALL, "Portuguese");
-    Produto estoque[MAX_PRODUTOS];
-    Funcionario funcionarios[MAX_FUNCIONARIOS];
-    int numProdutos = 0;
-    int numFuncionarios = 0;
-    int opcao;
+    int main() {
+    setlocale(LC_ALL, "Portuguese"); <br>
+    Produto estoque[MAX_PRODUTOS]; <br> 
+    Funcionario funcionarios[MAX_FUNCIONARIOS]; <br> 
+    int numProdutos = 0; <br> 
+    int numFuncionarios = 0; <br> 
+    int opcao; <br>
 
     do {
         printf("\nMenu Principal:\n");
@@ -111,14 +111,14 @@ int main() {
     } while(opcao != 0);
 
     return 0;
-}
+    }
 
 // Funções de Estoque
 
-void adicionarProduto(Produto estoque[], int *numProdutos) {
-    if (*numProdutos >= MAX_PRODUTOS) {
-        printf("Estoque cheio.\n");
-        return;
+    void adicionarProduto(Produto estoque[], int *numProdutos) <br> {
+    if (*numProdutos >= MAX_PRODUTOS) <br> {
+        printf("Estoque cheio.\n"); <br>
+        return; <br>
     }
 
     Produto p;
@@ -134,24 +134,24 @@ void adicionarProduto(Produto estoque[], int *numProdutos) {
     estoque[*numProdutos] = p;
     (*numProdutos)++;
     printf("Produto adicionado com sucesso.\n");
-}
-
-void listarProdutos(Produto estoque[], int numProdutos) {
-    if (numProdutos == 0) {
-        printf("Nenhum produto no estoque.\n");
-        return;
     }
-    printf("Produtos em estoque:\n");
-    for (int i = 0; i < numProdutos; i++) {
-        printf("ID: %d, Nome: %s, Preço: %.2f, Quantidade: %d\n",
-               estoque[i].id, estoque[i].nome, estoque[i].preco, estoque[i].quantidade);
-    }
-}
 
-void atualizarQuantidade(Produto estoque[], int numProdutos) {
-    int id, novaQuantidade;
-    printf("Digite o ID do produto para atualizar a quantidade: ");
-    scanf("%d", &id);
+    void listarProdutos(Produto estoque[], int numProdutos) <br> {
+    if (numProdutos == 0) <br> {
+        printf("Nenhum produto no estoque.\n"); <br>
+        return; <br>
+    }
+    printf("Produtos em estoque:\n"); <br> 
+    for (int i = 0; i < numProdutos; i++) <br> { 
+        printf("ID: %d, Nome: %s, Preço: %.2f, Quantidade: %d\n", <br>
+               estoque[i].id, estoque[i].nome, estoque[i].preco, estoque[i].quantidade); <br>
+    }
+    }
+
+    void atualizarQuantidade(Produto estoque[], int numProdutos) <br> {
+    int id, novaQuantidade; <br>
+    printf("Digite o ID do produto para atualizar a quantidade: "); <br>
+    scanf("%d", &id); <br>
 
     for (int i = 0; i < numProdutos; i++) {
         if (estoque[i].id == id) {
@@ -163,12 +163,12 @@ void atualizarQuantidade(Produto estoque[], int numProdutos) {
         }
     }
     printf("Produto não encontrado.\n");
-}
+    }
 
-void buscarProduto(Produto estoque[], int numProdutos) {
-    int id;
-    printf("Digite o ID do produto para buscar: ");
-    scanf("%d", &id);
+    void buscarProduto(Produto estoque[], int numProdutos) <br> {
+    int id; <br> 
+    printf("Digite o ID do produto para buscar: "); <br> 
+    scanf("%d", &id); <br>
 
     for (int i = 0; i < numProdutos; i++) {
         if (estoque[i].id == id) {
@@ -178,14 +178,14 @@ void buscarProduto(Produto estoque[], int numProdutos) {
         }
     }
     printf("Produto não encontrado.\n");
-}
+    }
 
 // Funções de Caixa
 
-void realizarVenda(Produto estoque[], int numProdutos) {
-    int id, quantidade;
-    printf("Digite o ID do produto para venda: ");
-    scanf("%d", &id);
+    void realizarVenda(Produto estoque[], int numProdutos) <br> {
+    int id, quantidade; <br> 
+    printf("Digite o ID do produto para venda: "); <br>
+    scanf("%d", &id); <br>
 
     for (int i = 0; i < numProdutos; i++) {
         if (estoque[i].id == id) {
@@ -201,19 +201,21 @@ void realizarVenda(Produto estoque[], int numProdutos) {
         }
     }
     printf("Produto não encontrado.\n");
-}
+    }
 
-void relatorioVendas() {
-    // Implementar um relatório de vendas real conforme necessário
+    void relatorioVendas() {
+    
+   // Implementar um relatório de vendas real conforme necessário
+    
     printf("Relatório de vendas não disponível neste momento.\n");
-}
+    }
 
-// Funções de Funcionários
+  // Funções de Funcionários
 
-void cadastrarFuncionario(Funcionario funcionarios[], int *numFuncionarios) {
-    if (*numFuncionarios >= MAX_FUNCIONARIOS) {
-        printf("Número máximo de funcionários alcançado.\n");
-        return;
+    void cadastrarFuncionario(Funcionario funcionarios[], int *numFuncionarios) <br> {
+    if (*numFuncionarios >= MAX_FUNCIONARIOS) <br> {
+        printf("Número máximo de funcionários alcançado.\n"); <br>
+        return; <br>
     }
 
     Funcionario f;
@@ -227,24 +229,26 @@ void cadastrarFuncionario(Funcionario funcionarios[], int *numFuncionarios) {
     funcionarios[*numFuncionarios] = f;
     (*numFuncionarios)++;
     printf("Funcionário cadastrado com sucesso.\n");
-}
-
-void listarFuncionarios(Funcionario funcionarios[], int numFuncionarios) {
-    if (numFuncionarios == 0) {
-        printf("Nenhum funcionário cadastrado.\n");
-        return;
     }
-    printf("Funcionários:\n");
-    for (int i = 0; i < numFuncionarios; i++) {
-        printf("ID: %d, Nome: %s, Cargo: %s\n",
-               funcionarios[i].id, funcionarios[i].nome, funcionarios[i].cargo);
+
+    void listarFuncionarios(Funcionario funcionarios[], int numFuncionarios) <br> {
+    if (numFuncionarios == 0) <br> {
+        printf("Nenhum funcionário cadastrado.\n"); <br>
+        return; <br>
     }
-}
+    printf("Funcionários:\n"); <br>
+    for (int i = 0; i < numFuncionarios; i++) <br> {
+        printf("ID: %d, Nome: %s, Cargo: %s\n", <br>
+               funcionarios[i].id, funcionarios[i].nome, funcionarios[i].cargo); <br>
+    }
+    }
 
 
- ┣ 📂 docs/                 # Documentação extra (diagramas, especificações etc.)
- ┣ 📂 tests/                # Testes automatizados
- ┣ 📄 README.md         
+ ┣ 📂 docs/  <br>              
+ # Documentação extra (diagramas, especificações etc.) <br>
+ ┣ 📂 tests/   <br>            
+ # Testes automatizados <br>
+ ┣ 📄 README.md  <br>       
  
  # Documentação principal
  
