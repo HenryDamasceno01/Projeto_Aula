@@ -1,5 +1,5 @@
-📦 Sistema_de_Hortifruti
- ┣ 📂 src/     
+📦 Sistema_de_Hortifruti <br>
+┣ 📂 src    <br>
 
  # Código-fonte
  
@@ -280,6 +280,8 @@ Sistema feito para gerenciamento de estoque e vendas de um Hortifruti. Este proj
 
 
  
- ┣ 📄 .gitignore            # Arquivos a serem ignorados
- ┣ 📄 LICENSE               # Licença do projeto
-
+ ┣ 📄 .gitignore         
+ # Arquivos a serem ignorados
+ ┣ 📄 LICENSE        
+ # Licença do projeto
+ MIT License
