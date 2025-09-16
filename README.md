@@ -1,17 +1,20 @@
 # Protótipo de um Sisetema de Hortifruti
- # Documentação extra (diagramas, especificações etc.) <br>
- ┣ 📂 docs/  <br>              
+
+# 📖 Descrição
+Sistema feito para gerenciamento de estoque e vendas de um Hortifruti. Este projeto tem como objetivo desenvolver um sistema de hortifrúti para controle de estoque e vendas.
+
+---    
+
+ # Documentação principal
+ 
   # Backlog <br>
  ┣ 📂 Backlog   <br>            
  ┣ 📄 README.md  <br> 
  
   # Documentação principal
- 
-# Sistema_de_Hortifruti
 
-## 📖 Descrição
-Sistema feito para gerenciamento de estoque e vendas de um Hortifruti. Este projeto tem como objetivo desenvolver um sistema de hortifrúti para controle de estoque e vendas.
----
+ # Documentação extra (diagramas, especificações etc.) <br>
+ ┣ 📂 docs/  <br> 
 
 ## 🚀 Funcionalidades
 - [x] Cadastro de clientes
