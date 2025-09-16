@@ -8,7 +8,41 @@ Sistema feito para gerenciamento de estoque e vendas de um Hortifruti. Este proj
  # Documentação principal
  
   # Backlog <br>
- ┣ 📂 Backlog   <br>            
+ ┣ 📂 Backlog   <br>  
+ - Épico 1 – Gestão de Produtos e Estoque
+
+     História 1: Como administrador, quero cadastrar produtos com nome, categoria, preço e validade, para controlar o estoque.
+
+     História 2: Como administrador, quero editar e excluir produtos, para manter o cadastro atualizado.
+
+     História 3: Como administrador, quero registrar a entrada e saída de produtos, para controlar o estoque em tempo real.
+
+     História 4: Como administrador, quero receber alerta quando um produto estiver perto do vencimento, para evitar perdas.
+
+ - Épico 2 – Vendas e Caixa
+
+     História 5: Como atendente, quero registrar vendas rapidamente, para agilizar o atendimento.
+
+     História 6: Como atendente, quero emitir nota ou cupom, para entregar ao cliente.
+
+     História 7: Como administrador, quero ter um relatório diário de vendas, para acompanhar o faturamento.
+
+ - Épico 3 – Gestão de Clientes
+
+     História 8: Como atendente, quero cadastrar clientes, para oferecer promoções e descontos.
+
+     História 9: Como administrador, quero acompanhar os clientes mais frequentes, para estratégias de fidelização.
+
+ - Épico 4 – Relatórios e Administração
+
+     História 10: Como administrador, quero ver relatório de faturamento mensal, para analisar o crescimento.
+
+     História 11: Como administrador, quero acompanhar a quantidade de clientes por dia, para planejar melhor o estoque.
+
+ - Épico 5 – Segurança e Acesso
+
+     História 12: Como administrador, quero controlar permissões de acesso, para proteger os dados.
+
  ┣ 📄 README.md  <br> 
  
   # Documentação principal
@@ -26,7 +60,7 @@ Sistema feito para gerenciamento de estoque e vendas de um Hortifruti. Este proj
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-- Linguagem: C#
+- Linguagem: C
 - Banco de Dados: 
 - Frameworks: .NET
 
