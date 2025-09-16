@@ -1,6 +1,34 @@
-📦 Sistema_de_Hortifruti <br>
-┣ 📂 src    <br>
+ # Documentação extra (diagramas, especificações etc.) <br>
+ ┣ 📂 docs/  <br>              
+  # Backlog <br>
+ ┣ 📂 Backlog   <br>            
+ ┣ 📄 README.md  <br> 
+ 
+  # Documentação principal
+ 
+# Sistema_de_Hortifruti
 
+## 📖 Descrição
+Sistema feito para gerenciamento de estoque e vendas de um Hortifruti. Este projeto tem como objetivo desenvolver um sistema de hortifrúti para controle de estoque e vendas.
+---
+
+## 🚀 Funcionalidades
+- [x] Cadastro de clientes
+- [x] Controle de estoque
+- [x] Vendas
+- [ ] Relatórios financeiros
+- [ ] Dashboard com gráficos
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+- Linguagem: C#
+- Banco de Dados: 
+- Frameworks: .NET
+
+---
+
+## 📂 Estrutura do Projeto
  # Código-fonte
  
     #include <stdio.h> <br>
@@ -242,46 +270,7 @@
                funcionarios[i].id, funcionarios[i].nome, funcionarios[i].cargo); <br>
     }
     }
-
-
- ┣ 📂 docs/  <br>              
- # Documentação extra (diagramas, especificações etc.) <br>
- ┣ 📂 tests/   <br>            
- # Testes automatizados <br>
- ┣ 📄 README.md  <br>       
- 
- # Documentação principal
- 
-# Sistema_de_Hortifruti
-
-## 📖 Descrição
-
-Sistema feito para gerenciamento de estoque e vendas de um Hortifruti. Este projeto tem como objetivo desenvolver um sistema de hortifrúti para controle de estoque e vendas.
-
----
-
-## 🚀 Funcionalidades
-- [x] Cadastro de clientes
-- [x] Controle de estoque
-- [x] Vendas
-- [ ] Relatórios financeiros
-- [ ] Dashboard com gráficos
-
----
-
-## 🛠️ Tecnologias Utilizadas
-- Linguagem: C / C# /
-- Banco de Dados:
-- Frameworks:
-
----
-
-## 📂 Estrutura do Projeto
-
-
- 
- ┣ 📄 .gitignore         
- # Arquivos a serem ignorados
- ┣ 📄 LICENSE        
+   
  # Licença do projeto
+ ┣ 📄 LICENSE 
  MIT License
